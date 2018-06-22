@@ -311,7 +311,7 @@ def UDF_DeployToCloudHub(udfp_DownloadedFilePath, udfp_PropertiesFilePath, udfp_
                 id: 'AnypointOrganization', message: 'Please select CloudHub Anypoint Organization name to deploy', 
                 parameters: [
 				[
-					$class: 'ChoiceParameterDefinition', choices: 'WHISHWORKS LnD', 
+					$class: 'ChoiceParameterDefinition', choices: 'WHISHWORKSLnD', 
 					name: 'ANYPOINT_ORGANIZATION',
 					description: 'Please select the Organization'
 				]])
