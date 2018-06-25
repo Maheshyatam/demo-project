@@ -81,8 +81,8 @@ node {
 		stage 'DeployToCloudHub'
 			UDF_DeployToCloudHub(downloadFilePath, propertiesFilePath,"",DomainNameUserInput)
 		
-		stage 'Notification'
-			SendEmail("lp.admin@whishworks.com","lp.admin@whishworks.com","success")
+		//stage 'Notification'
+			//SendEmail("lp.admin@whishworks.com","lp.admin@whishworks.com","success")
 			
 		}catch(error)
 		{
@@ -189,8 +189,8 @@ node {
 		stage 'DeployToCloudHub'
 				UDF_DeployToCloudHub(downloadFilePath, propertiesFilePath,downloadDir,DomainNameUserInput)
 			
-		stage 'Notification'
-			SendEmail("lp.admin@whishworks.com","lp.admin@whishworks.com","success")
+		//stage 'Notification'
+			//SendEmail("lp.admin@whishworks.com","lp.admin@whishworks.com","success")
 		
 		}catch(error)
 		{
