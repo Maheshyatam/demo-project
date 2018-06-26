@@ -358,7 +358,7 @@ def UDF_DeployToCloudHub(udfp_DownloadedFilePath, udfp_PropertiesFilePath, udfp_
 	}catch(err)
 	{
 		//throw(error)
-		SendEmail("lp.admin@whishworks.com","lp.admin@whishworks.com","FAILED")
+		//SendEmail("lp.admin@whishworks.com","lp.admin@whishworks.com","FAILED")
 	}
 	
 	if(appExists == false && PropertiesFileInput == 'YES')
@@ -587,7 +587,7 @@ def UDF_DeployToCloudHub(udfp_DownloadedFilePath, udfp_PropertiesFilePath, udfp_
 			export ANYPOINT_PASSWORD=${password1}
 			export ANYPOINT_ORG="${AnypointOrganization}"
 			export ANYPOINT_ENV="${AnypointEnvironment}"
-			anypoint-cli runtime-mgr cloudhub-application modify ${udfp_AppName} ${udfp_DownloadedFilePath} --workerSize ${vCoreInput} --workers ${workerInput} --runtime ${runTimeVersion} --propertiesFile ${udfp_PropertiesFilePath}
+			anypoint-cli runtime-mgr cloudhub-application modify ${udfp_AppName} ${udfp_DownloadedFilePath} --workerSize ${vCoreInput} --workers ${workerInput} --runtime ${runTimeVersion}	
 		"""
 			}
 		echo 'existing app and props'
